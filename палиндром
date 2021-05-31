@@ -1,0 +1,6 @@
+def palindrome():
+    input_str = input()
+    if input_str == input_str[::-1]:
+        print("Это палиндром")
+    else:
+        print("Это не палиндром")
