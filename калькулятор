@@ -1,0 +1,83 @@
+def factorial(x):
+    if x == 0:
+        return 1
+    else:
+        return x * factorial(x-1)
+        
+lambda_factorial = lambda x: 1 if x == 0 else x * lambda_factorial(x-1)
+import math
+un_ops = {
+ ‘sqrt': math.sqrt,
+ ‘!': math.factorial # or lambda_factorial, or factorial
+ }
+ bin_ops = {
+'+': lambda x,y: x + y
+'-': lambda x,y: x - y       
+'/': lambda x,y: x / y
+'*': lambda x,y: x * y
+'^': math.pow
+}
+
+def calculate():
+    first_float = None
+    operator = None
+    second_float = None
+    
+    while first_float is None
+     try:
+         first_float = float(input())
+         except:
+             print('Insert adequate number')
+             
+    while operator is None:
+        operator = input()
+        if (operator not in un_ops) and (operator not in bin_ops):
+            print ('Insert supported operator')
+            operator = None
+            
+        if operator in un_ops:
+            return un_ops [operator](first_float)
+        else:
+            while second_float is None:
+                try:
+                    second_float = float(input())
+                except:
+                    print ('Insert adequate number')
+                    
+            return bin_ops[operator](first_float, second_float)
+            
+    for _ in range(10):
+        print(calculate())
+        print ()
+        
+        1
+        +
+        2
+        3.0
+        
+        q
+        Insert adequate number
+        13
+        o
+        Insert supported operator
+        -
+        27
+        -14.0
+        
+        13
+        *
+        8.1
+        105.3
+        
+        2
+        REW
+        Insert supported operator
+        ^
+        2
+        4.0
+        
+        3
+        !
+        6
+        
+        
