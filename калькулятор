@@ -7,9 +7,10 @@ def factorial(x):
 lambda_factorial = lambda x: 1 if x == 0 else x * lambda_factorial(x-1)
 import math
 un_ops = {
- ‘sqrt': math.sqrt,
- ‘!': math.factorial # or lambda_factorial, or factorial
+    ‘sqrt': math.sqrt,
+    ‘!': math.factorial # or lambda_factorial, or factorial
  }
+ 
  bin_ops = {
 '+': lambda x,y: x + y
 '-': lambda x,y: x - y       
