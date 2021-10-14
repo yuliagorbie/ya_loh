@@ -1,0 +1,22 @@
+print ("Введите имя файла:")
+x = str(input()) 
+y = int(x.rfind("."))
+z = int(len(x))-1
+
+'''
+if x.find("/") or x.find(">") or x.find("<") or x.find("\") or x.find("|") or x.find("*") or x.find(""") or x.find("?"):
+    print ("Недопустимое имя файла")
+    quit()
+'''
+
+if y == z:
+     print ("Недопустимое имя файла")
+     quit()
+
+elif y == -1:
+     print ("Недопустимое имя файла")
+     quit()
+
+else:
+     print ("Расширение файла:")
+     print (x[x.rfind(".")+1:])
