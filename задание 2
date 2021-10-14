@@ -1,0 +1,11 @@
+number = int
+
+list = [1, 97, 78, 2, 25, 420, 71, 88, 55, 43, 69, 9, 15, 7]
+for number in list:
+
+
+    if number % 2 != 0:
+       print (number)
+
+    if number == 69 or number == 420:
+       quit()
